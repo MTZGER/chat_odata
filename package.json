@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index",
     "dev": "nodemon index",
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d public"
   },
   "author": "Tibor Molnar",
   "license": "ISC",
