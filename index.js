@@ -2,6 +2,14 @@ const express = require('express')
 const path = require("path")
 const firebase = require("./firebase")
 const app = express()
+
+const ghpages = require("gh-pages")
+
+ghpages.publish('dist', {
+  branch: 'master',
+  repo: 'https://example.com/other/repo.git'
+}, callback);
+
 const port = 3000
 
 const GET_CHAT_BY_ID = "GET_CHAT_BY_ID"
