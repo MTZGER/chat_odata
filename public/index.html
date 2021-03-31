@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Send requests</title>
+        <script>
+            fetch("/", {
+                method: "POST",
+                headers: {'content-type': 'application/json'},
+                body: JSON.stringify({
+                    type: "GET_CHAT_BY_ID",
+                    payload: 1
+                })
+            })
+                .then(result => result.json())
+                .then(result => console.log(result))
+        </script>
+    </head>
+    <body>
+        <h1>Send requests</h1>
+    </body>
+</html>
