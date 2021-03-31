@@ -6,8 +6,6 @@
   "scripts": {
     "start": "node index",
     "dev": "nodemon index",
-    "build": "react-scripts build",
-    "predeploy": "npm run .:build",
     "deploy": "gh-pages -d ."
   },
   "author": "Tibor Molnar",
